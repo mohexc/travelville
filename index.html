@@ -46,7 +46,7 @@
     <section class="slider">
       <ul class="slides">
         <li>
-          <img src="./img/img1.jpg" alt="" class="materialboxed responsive-img">
+          <img src="./img/img1.jpg" alt="">
           <div class="caption left-align">
             <h2>We Work With All Budgets</h2>
             <h5 class="light grey-text text-lighten-4 hide-on-small-only">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores a sequi
@@ -55,7 +55,7 @@
           </div>
         </li>
         <li>
-          <img src="./img/img2.jpg" alt="" class="materialboxed responsive-img">
+          <img src="./img/img2.jpg" alt="">
           <div class="caption center-align">
             <h2>Take Your Drem Vaction</h2>
             <h5 class="light grey-text text-lighten-4 hide-on-small-only">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores a sequi
@@ -64,7 +64,7 @@
           </div>
         </li>
         <li>
-          <img src="./img/img3.jpg" alt="" class="materialboxed responsive-img">
+          <img src="./img/img3.jpg" alt="">
           <div class="caption right-align">
             <h2>Group & Individual Getaways</h2>
             <h5 class="light grey-text text-lighten-4 hide-on-small-only">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores a sequi
@@ -126,7 +126,7 @@
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
-                <img src="img/evening-dubai-70441.jpg" style="height: 240px;" alt="">
+                <img src="img/evening-dubai-70441.jpg" alt="">
                 <span class="card-title">Cancun, Mexico</span>
               </div>
               <div class="card-content">
@@ -137,22 +137,22 @@
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
-                <img src="img/hot-air-balloons-3377538.jpg" style="height: 240px;" alt="">
+                <img src="img/hot-air-balloons-3377538.jpg" alt="">
                 <span class=" card-title">Nova Scotia</span>
               </div>
               <div class="card-content">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste soluta quam repudiandae sequi, dolore id?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste soluta quam repudiandae sequi, dolore id?</p><br>
               </div>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
-                <img src="./img/shifaaz-shamoon-_STLYdogRF4-unsplash.jpg" style="height: 240px;" alt="">
+                <img src="./img/shifaaz-shamoon-_STLYdogRF4-unsplash.jpg" alt="">
                 <span class=" card-title">The Bahamas</span>
               </div>
               <div class="card-content">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste soluta quam repudiandae sequi, dolore id?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste soluta quam repudiandae sequi, dolore id?</p><br>
               </div>
             </div>
           </div>
@@ -249,7 +249,7 @@
     <section id="contact" class="section section-contact scrollspy">
       <div class="container">
         <div class="row">
-          <div class="s12 m6">
+          <div class="col s12 m6">
             <div class="card-panel teal white-text center">
               <i class="material-icons medium">email</i>
               <h4>Contact Us For Booking</h4>
@@ -264,7 +264,7 @@
               <li class="collection-item">Miami FL, 555-555-5555</li>
             </ul>
           </div>
-          <div class="s12 m6">
+          <div class="col s12 m6" style="height: auto;">
             <div class="card-panel grey lighten-3">
               <h5>Please fill out this form</h5>
               <div class="input-field">
@@ -310,6 +310,7 @@
           duration: 500,
           interval: 6000
         });
+
         const autocomplete = document.querySelector('.autocomplete')
         M.Autocomplete.init(autocomplete, {
           data: {
@@ -323,8 +324,9 @@
             "The Bahamas": null,
           }
         })
+
         const scrollspy = document.querySelectorAll('.scrollspy');
-        M.ScrollSpy.init(scrollspy, { throttle: 300, scrollOffset: 50 })
+        M.ScrollSpy.init(scrollspy, { throttle: 2000, scrollOffset: 50 })
 
         const materialboxed = document.querySelectorAll('.materialboxed');
         M.Materialbox.init(materialboxed, { inDuration: 1000 });
